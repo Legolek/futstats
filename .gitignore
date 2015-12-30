@@ -1,0 +1,12 @@
+/.metadata
+/.recommenders
+/Servers
+/RemoteSystemsTempFiles
+/FutStats/.mvn
+/FutStats/.settings
+/FutStats/bin
+/FutStats/target
+/FutStats/.classpath
+/FutStats/.project
+/FutStats/mvnw
+/FutStats/mvnw.cmd
