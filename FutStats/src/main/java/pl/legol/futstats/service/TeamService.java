@@ -9,6 +9,7 @@ import javax.transaction.Transactional.TxType;
 import pl.legol.futstats.model.dto.TeamDto;
 
 public interface TeamService {
+
     public List<TeamDto> getAllTeams();
 
     public Optional<TeamDto> getTeamWithName(String name);

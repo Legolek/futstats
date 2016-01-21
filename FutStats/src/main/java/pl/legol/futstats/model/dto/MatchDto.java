@@ -2,6 +2,7 @@ package pl.legol.futstats.model.dto;
 
 import java.util.Date;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.dozer.Mapping;
 
 public class MatchDto {
@@ -70,6 +71,18 @@ public class MatchDto {
 
     public void setMatchDate(Date matchDate) {
         this.matchDate = matchDate;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append(id)
+                .append(homeTeam.getName())
+                .append(awayTeam.getName())
+                .append(homeScore)
+                .append(awayScore)
+                .append(matchDate)
+                .build();
     }
 
     public static class Builder {
